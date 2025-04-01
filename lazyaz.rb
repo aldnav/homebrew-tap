@@ -5,11 +5,11 @@
 class Lazyaz < Formula
   desc "A terminal-based UI application for interacting with Azure DevOps"
   homepage "https://github.com/aldnav/lazyaz"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
-    url "https://github.com/aldnav/lazyaz/releases/download/0.0.1/lazyaz_Darwin_all.tar.gz"
-    sha256 "00767f3b08619783930fe9c1c9576c699a82b3d76e5ed90b807cf776c6577e5b"
+    url "https://github.com/aldnav/lazyaz/releases/download/0.0.2/lazyaz_Darwin_all.tar.gz"
+    sha256 "2e0dba5cb01927ba127c647ebfc587e2ca7e7371811cd8b7b47bb035fcac8584"
 
     def install
       bin.install "lazyaz"
@@ -19,8 +19,8 @@ class Lazyaz < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aldnav/lazyaz/releases/download/0.0.1/lazyaz_Linux_x86_64.tar.gz"
-        sha256 "a30b836aac659bbc2a0f7a020962bedc5dd202230494f0b16b11f424b2e08a08"
+        url "https://github.com/aldnav/lazyaz/releases/download/0.0.2/lazyaz_Linux_x86_64.tar.gz"
+        sha256 "109f368898ee7f154b1dbe002708cb7f19aedc27e332a8c0b73704f636ece4b6"
 
         def install
           bin.install "lazyaz"
@@ -29,8 +29,8 @@ class Lazyaz < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aldnav/lazyaz/releases/download/0.0.1/lazyaz_Linux_arm64.tar.gz"
-        sha256 "6a89e49a35ab9fc1916125744ed5b353e60f5ef4844e365ecabf38c056230711"
+        url "https://github.com/aldnav/lazyaz/releases/download/0.0.2/lazyaz_Linux_arm64.tar.gz"
+        sha256 "54414d13e38e55148e5f16e00db40a0ebb2a71ba5578430f5e78d67ec776be71"
 
         def install
           bin.install "lazyaz"
